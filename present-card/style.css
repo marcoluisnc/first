@@ -1,0 +1,154 @@
+/*FONTS*/
+@font-face{
+    font-family: "RobotoMonoRegular";
+    src: url(Fonts/Roboto_Mono/RobotoMono-Regular.ttf) format("truetype");
+    
+}
+@font-face{
+    font-family: "RobotoMonoBold";
+    src: url(Fonts/Roboto_Mono/RobotoMono-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+
+/*Container morado*/
+#container-morado{
+    position: absolute;
+    background-color: #CC00FF;
+    width: 57%;
+    min-width: 57%;
+    height: 74%;
+    margin-top: 73px;
+    margin-left: 270px;
+    border-radius: 16px;
+}
+
+/*Container azul*/
+#container-azul{
+    position: absolute;
+    background-color: #43D8C9;
+    width: 85%;
+    height: 70%;
+    margin-top: 42px;
+    margin-left: 57px;
+    border-radius: 16px;
+}
+/*Contenido*/
+.img-mia img{
+    float: left;
+    height: 81%;
+    margin-top: 5%;
+    margin-left: 5%;
+    border-radius: 16px;
+}
+#contenido{
+    float: right;
+    margin-right: 20px;
+    margin-right: 16%;
+    margin-top: 5%;
+}
+
+#contenido .titulo{
+    font-family: "RobotoMonoBold";
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: all 300ms;
+    cursor: pointer;
+}
+#contenido .titulo:hover{
+    transform: scale(1.2,1.2);
+}
+#contenido .subtitulo{
+    margin-top: 20%;
+    text-align: center;
+    transition: all 300ms;
+}
+#contenido .subtitulo a{
+    font-family: "RobotoMonoRegular";
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+#contenido .subtitulo:hover{
+    transform: scale(1.2,1.2);
+}
+
+/*Formulario*/
+input[type="email"]{
+    background-color: rgba(255, 255, 255, 0.83);
+    height: 33px;
+    margin-left: 11%;
+    margin-top: 6%;
+    border-radius: 13px;
+    text-align: center;
+    font-family: "RobotoMonoRegular";
+    font-size: 12px;
+    border: none;
+    box-shadow: 0px 2px 4px;
+}
+
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 8%;
+    padding: 3px;
+    border-radius: 7px;
+    font-family: "RobotoMonoRegular";
+    cursor: pointer;
+    transition: all 200ms;
+}
+input[type="submit"]:active{
+    background-color: #CC00FF;
+}
+
+/*Footer*/
+#footer-negro{
+    width: 100%;
+    height: 15%;
+    background-color: #000;
+    border-radius: 16px;
+    margin-top: 411px;
+    line-height: 20px;
+}
+#footer-negro #text-footer{
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    font-size: 12px;
+    font-family: "RobotoMonoRegular";
+}
+.mex img{
+    position: relative;
+    width: 20px;
+    bottom: 60%;
+    left: 67%;
+}
+
+
+/*Responsive*/
+@media (max-width:"1200px"){
+    #container-morado{
+        display: block;
+        width: 1000px;
+        height: 60%;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+    #container-azul{
+        position: relative;
+        top: 40px;
+    }
+}
