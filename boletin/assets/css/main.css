@@ -134,6 +134,7 @@ a.close:active{
     color: #e3e321;
 }
 .footer{
+    border-top: 1px solid #2980B9;
     text-align: center;
 }
 .footer p{
@@ -142,10 +143,11 @@ a.close:active{
 .social-m a i{
     display: inline-block;
     font-size: 30px;
-    margin: 5px 15px 10px 0;
+    margin: 3px 15px 10px 0;
     color: #328BC0;
 }
 img{
+    float: left;
     margin: -45px 15px 0px 10px;
     width: 300px;
     height: 300px;
