@@ -124,7 +124,11 @@ a.close:active{
     opacity: 0.8;
 }
 .table tbody>tr:nth-child(odd){
-    background-color: rgba(109, 212, 250, 0.479);
+    background-color: #328BC0;
+    color: white;
+}
+.table tbody tr:nth-child(odd) td a{
+    color:white;
 }
 .fa-trophy{
     color: #e3e321;
