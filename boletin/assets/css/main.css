@@ -100,7 +100,7 @@ a.close:active{
     letter-spacing: 1px;
 }
 .title-equipos{
-    font-size: 1.6em;
+    font-size: 1.5em;
     border-bottom: 2px solid #69D0F6;
     padding: 1em 0;
     margin: 20px 30px 0px 30px;
@@ -147,7 +147,7 @@ a.close:active{
     color: #328BC0;
 }
 img{
-    
+
     margin: -45px 15px 0px 10px;
     width: 300px;
     height: 300px;
@@ -164,7 +164,7 @@ img{
 
 @media (min-height:550px){
     .content{
-        height: 600px;
+        height: 500px;
     }
 }
    
