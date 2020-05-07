@@ -66,10 +66,12 @@ h3{
     display: inline-block;
     width: 100%; 
     max-width: 80%;
+    
 }
 #foto img{  
     width: 250px;
     background-color:white;
+    
     padding:10px 10px 50px 10px;
     border:1px solid #BFBFBF;
     box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
