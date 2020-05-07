@@ -13,7 +13,7 @@ body{
 }
 header{
     display: flex;
-    background-color: #a4b0be;
+    background-color: #00B7D4;
     text-align: center;
     width: 100%;
     height: 13vh;
@@ -78,7 +78,7 @@ li{
 
 .proyects ul li a{
     text-decoration: none;
-    color: black;
+    color: #505488;
     transition: all 300ms;
 }
 .proyects ul li a:hover{
@@ -90,13 +90,13 @@ li{
 
 .social-accounts div ul li a i{
     display: inline-block;
-    color: black;
+    color: #00B7D4;
     font-size: 2.5em;
     margin-top: 10px;
     transition: all 200ms;
 }
 .social-accounts div ul li a i:hover{
-    color: #747d8c;;
+    color: #505488;
 }
 .social-accounts div ul li a i:active{
     color: red;;
