@@ -28,9 +28,11 @@
     dl{
         margin-top: 0;
     }
-    div.proyects,
-    div.social-accounts{
+    div.proyects{
         margin-left: 20px;
+    }
+    div.social-accounts{
+        margin-left: 30px;
     }
 
     
