@@ -69,6 +69,10 @@ h3{
 }
 #foto img{  
     width: 250px;
+    background-color:white;
+    padding:10px 10px 50px 10px;
+    border:1px solid #BFBFBF;
+    box-shadow:10px 10px 30px rgba(0, 0, 0, 0.8);
     
 }
 li{
@@ -82,10 +86,8 @@ li{
     transition: all 300ms;
 }
 .proyects ul li a:hover{
-    
     text-decoration: underline;
     color: #342ead;
-    transform: scale(1.2,1.2);
 }
 
 .social-accounts div ul li a i{
