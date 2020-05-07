@@ -170,7 +170,7 @@ img{
    
 @media (min-width:800px){
     .content{
-        height: 600px;
+        height: 550px;
         padding: 1.8em;
         overflow: hidden;
     }
