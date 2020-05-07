@@ -1,0 +1,37 @@
+@media (min-width: 800px){
+    #contenido-central{
+        height: 50vh;
+    }
+    .subtitulo{
+        height: 8vh;
+        line-height: 1em;
+    }
+    header h1{
+        font-size: 2em;
+        line-height: 1.5em;
+    }
+    .subtitulo {
+        font-size: 1.3em;
+    }
+    
+    .content-right{
+        float: right;
+        width: 50%;
+    }
+    .content-right .content-right1{
+        display: flex;
+    }
+    .content-left{
+        float: left;
+        width: 50%
+    }
+    dl{
+        margin-top: 0;
+    }
+    div.proyects,
+    div.social-accounts{
+        margin-left: 20px;
+    }
+
+    
+}

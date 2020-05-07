@@ -8,8 +8,8 @@ body{
 }
 .container{
     width: 100%;
-    height: 80vh;
-
+    height: 100vh;
+    overflow-x: hidden;
 }
 header{
     display: flex;
@@ -25,34 +25,34 @@ header h1{
     color: black;
     font-weight: bold;
     margin: auto;
-    line-height: 3.5em;
+    line-height: 2.5em;
 }
 .subtitulo{
+    display: inline-block;
+    width: 100%;
+    height: 5vh;
     text-align: center;
-    padding: 8px;
+    line-height: 0;
     color: white;
     font-weight: bold;
+    font-size: 1.1em;
+    padding: auto;
 }
 #contenido-central{
     width: 80%;
-    height: 200px;
+    height: 80vh;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
 }
-section>#contenido-central>.educacion{
-    display: inline-block;
-    width: 65%;
-    vertical-align: top;
-}
-.educacion .description-me h2{
+.description-me h2{
     display: inline-block;
     text-align: left;
     min-width: 300px;
     max-width: 100%;
     margin: 0px 0 20px 0;
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 dt,
 h3{
@@ -63,13 +63,13 @@ h3{
     font-weight: 400;
 }
 #foto{
-    
     display: inline-block;
-    width: 30%;
+    width: 100%; 
     max-width: 80%;
 }
 #foto img{  
-    width: 300px;
+    width: 250px;
+    
 }
 li{
     line-height: 2em;
@@ -102,6 +102,3 @@ li{
     color: red;;
 }
 
-@media (min-width:800px){
-    
-}
