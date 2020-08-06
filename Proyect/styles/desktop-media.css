@@ -100,11 +100,14 @@
 }
 /*PARA DISPOSITIVOS DE MAS DE 1200PX DE ANCHO*/
 @media (min-width: 1200px){
+    header{
+        height: 13vh;
+    }
     .logo{
         font-size: 2.5em;
     }
     ul li a{
-        font-size: 1.2em;
+        font-size: 1.3em;
 
     }
     nav{
@@ -112,7 +115,7 @@
     }
     img{
        height: 32em;
-       margin-top: 20px;
+    
     }
     img.imagenes{
         display: block;
@@ -183,7 +186,7 @@
         overflow-x: hidden;
     }
     img{
-        height: 40em;
+        height: 45em;
     }
     .caja{
         width: 25%;
