@@ -1,4 +1,3 @@
-# marcoluisnc.github.com
-My firsts websites
-Here is my beggining as a Fullstack Web Developer.
-All your comments and advices are welcome!
+## Hola, estos son mis primeros proyectos como Front-end developer.
+### Constantemente los actualizo a medida que voy aprendiendo cosas-
+> - Puedes dejarme feedback:) Te lo agradecería bastante
