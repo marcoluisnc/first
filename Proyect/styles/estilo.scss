@@ -29,7 +29,7 @@ body{
     color: $color-gray;
     transition: all 300ms;
     margin-left: 10px;
-    
+    display: inline-block;
 }
 .logo:hover{
     cursor: pointer;
@@ -38,9 +38,6 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-}
-li:first-child{
-    margin-top: 0;
 }
 li{
     margin-top: 10px;
