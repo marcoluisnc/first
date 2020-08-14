@@ -179,13 +179,14 @@ article.content{
   background-color: black;
   padding: 15px;
   border-radius: 10px;
+  overflow-y: hidden;
 }
 .info h3{
   font-size: 1.3em;
   text-align: center;
 }
 .info p{
-  font-size: 1.1em;
+  font-size: 1em;
 }
 article.rightside{
   width: 30%;
