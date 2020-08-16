@@ -41,6 +41,10 @@
     .socialtext{
         margin-top: 70px;
     }
+    .login{
+        padding: 10px;
+        width: 100%;
+    }
 }
 @media (min-height:350px) and (max-width:500px){
     .container{
@@ -50,5 +54,13 @@
 @media (min-height:1500px){
     .container{
         height: 70vh;
+    }
+}
+@media (max-height:650px){
+    .socialtext{
+        margin-top: 20px;
+    }
+    .social-icons{
+        padding-bottom: 15px;
     }
 }
