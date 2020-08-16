@@ -46,13 +46,13 @@
         height: 60vh;
     }
 }
-@media (min-height:1500px){
-    .container{
-        height: 70vh;
-    }
-}
 @media (min-height:350px){
     .container{
         height: 100%;
+    }
+}
+@media (min-height:1500px){
+    .container{
+        height: 70vh;
     }
 }
