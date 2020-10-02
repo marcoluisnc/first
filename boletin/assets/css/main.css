@@ -1,0 +1,221 @@
+body{
+    font-family: 'Sarabun', sans-serif;
+    letter-spacing: 1px;
+    box-sizing: border-box;
+}
+.container{
+    background: #2980B9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh;
+    width: 100vw;
+    display: flex;/*USA FLEXBOX*/
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    max-width: 960px;
+    width: 100%;
+    height: 80vh;
+    background-color: aliceblue;
+    border-radius: 16px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 1em;
+    position: relative;
+}
+
+td{
+    display: block;
+    width: 100%;
+}
+th{
+    display: none;
+}
+td:nth-of-type(1){
+    font-size: 1.8em;
+    font-weight: bold;
+
+    
+}
+td:nth-of-type(6){
+    display: none;
+}
+div.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+a.close{
+    /*Para que pueda aplicar height y width*/
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-color: #338DC3;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    /*Para que X quede centrado*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    /*Trancision*/
+    transition: all 200ms;
+}
+a.close:hover{
+    background-color: #5DBFE8;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a.close:active{
+    background-color: rgb(123, 214, 247);
+}
+
+.paragraph{
+    line-height: 2em;
+    font-weight: 200;
+    padding-top: 40px;
+    padding: 15px 30px 0px 30px;
+}
+.adress{
+    color:#338DC3;
+    padding-left: 30px;
+    margin-top: 2em;
+}
+.adress p{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.adress i{
+    margin-right: 15px;
+}
+.text{
+    margin-top: 70px;
+}
+.title{
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.title-equipos{
+    font-size: 1.5em;
+    border-bottom: 2px solid #69D0F6;
+    padding: 1em 0;
+    margin: 20px 30px 0px 30px;
+    text-align: left;
+}
+.table{
+    width: 100%;
+    border-spacing:0;
+}
+
+.table th, .table td{
+    padding: 1em;
+    
+}
+
+.table tbody tr td>a{
+    text-decoration: none;
+    color: rgb(17, 112, 172);
+}
+.table tbody tr td>a:hover{
+    opacity: 0.8;
+}
+.table tbody>tr:nth-child(odd){
+    background-color: #328BC0;
+    color: white;
+}
+.table tbody tr:nth-child(odd) td a{
+    color:white;
+}
+.fa-trophy{
+    color: #e3e321;
+    margin-left: 2px;
+}
+.footer{
+    border-top: 1px solid #2980B9;
+    text-align: center;
+}
+.footer p{
+    font-weight: 300;
+}
+.social-m a i{
+    display: inline-block;
+    font-size: 30px;
+    margin: -3px 15px 10px 0;
+    color: #328BC0;
+}
+img{
+
+    margin: -45px 15px 0px 10px;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+}
+
+.position{
+    background-color: #338DC3;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.footer p a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer p a:hover{
+    color: #328CC2;
+}
+
+
+
+   
+@media (min-width:800px){
+    .content{
+        height: 550px;
+        padding: 1.8em;
+        overflow: hidden;
+    }
+    .title{
+        margin-top: 25px;
+    }
+    .title-equipos{
+        font-size: 2em;
+    }
+    .adress p{
+        font-size: 1.3em;
+    }
+    .footer{
+        margin-top: 3em;
+    }
+    .footer p{
+        font-size: 1em;
+    }
+
+
+    img{
+        float: left;
+    }
+    td{
+        display: table-cell;
+        width: auto;
+        
+    }
+    th{
+        display: table-cell;
+        
+    }
+    td:nth-of-type(1){
+        font-size: 1em;
+        font-weight: bold;
+    }
+    td:nth-of-type(6){
+        display: block;
+        text-align: center;
+    }
+    
+}

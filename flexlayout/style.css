@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgb(39, 39, 39);
+    height: 120vh;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    letter-spacing: 1px;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+.borderMarker{
+    position: relative;
+    display: inline-block;
+    
+  }
+
+.borderMarker h1 {
+      z-index: 1;
+      position: relative;
+      font-size: 4em;
+      margin: 0 5px;
+}
+  
+.borderMarker::after {
+    content: "";
+    position: absolute;
+    left: -0.1px;
+    right: -0.1px;
+    bottom: 0;
+    height: 100%;
+    transform: scaleY(.3);
+    transition: transform .1s ease-in-out;
+    transform-origin: bottom;
+    background-color: #ff04ff;
+}
+.borderMarker:hover::after {
+    transform: scaleY(1);
+}
+
+/*CONTENEDOR*/
+#cont-principal{
+  height: 90vh;
+  width: 70vw;
+  background-color: rgb(95, 95, 95);
+  margin: 90px auto;
+}
+
+/*HEADER*/
+header{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  color: black;
+}
+header>p{
+  font-size: 1.5em;
+  font-size: bold;
+  cursor: pointer;
+}
+.social-media{
+  font-size: 1.6em;
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.icons{
+  transition: all 300ms;
+  cursor: pointer;
+}
+.icons:hover{
+  transform: scale(1.2,1.2);
+  color:#ff04ff
+}
+.borderLeftRight {
+  display: inline-block;
+  position: relative;
+}
+
+.borderLeftRight::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #ff04ff;
+  transform-origin: bottom right;
+  transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.borderLeftRight:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*SECTIOM*/
+section.main{
+  display: flex;
+  height: 93%;
+}
+/*ASIDE*/
+aside{
+  width: 20%;
+  background-color: #ff04ff;
+}
+aside ul{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+aside ul li{
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 1.3em;
+  list-style: none;
+  text-align: center;
+}
+aside ul li a{
+  color: white;
+  text-decoration: none;
+}
+aside ul li i{
+  margin-right: 8px;
+}
+.overlayLeftBtn {
+  padding: 12px 24px; 
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlayLeftBtn a,
+.overlayLeftBtn i{
+  position: relative;
+  z-index: 1;
+  transition: color 0.25s cubic-bezier(.7,0,.9,1);
+}
+
+.overlayLeftBtn::before {
+  content: '';;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 6px;
+  transform: translate(-101%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color:#ffffff;
+  transition: transform 0.3s cubic-bezier(.7,0,.9,1);
+}
+
+.overlayLeftBtn:hover a,
+.overlayLeftBtn:hover i{
+  color: black;
+}
+
+.overlayLeftBtn:hover::before {
+  transform: translate(0, -50%);
+}
+article.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+}
+.content>.info{
+  width: 75%;
+  height: 40%;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+.info h3{
+  font-size: 1.3em;
+  text-align: center;
+}
+.info p{
+  font-size: 1em;
+}
+article.rightside{
+  width: 30%;
+  padding: 40px 30px;
+}
+.rightside h3{
+  text-align: center;
+}
+.formulario{
+  display: flex;
+  flex-direction:column ;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #eee;
+  height: 40%;
+  border-radius: 10px;
+}
+.formulario>label{
+  margin-bottom: 15px;
+  color: black;
+  font-weight: 600;
+}
+.formulario>label:nth-child(1){
+  margin-top: 20px;
+}
+.formulario input{
+  margin-bottom: 20px;
+  width: 65%;
+  height: 40px;
+  border-radius: 7px;
+}
+.formulario input[type="button"]{
+  width: 55%;
+  height: 50px;
+  background-color: #272727;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: medium;
+  transition: all 300ms;
+  cursor: pointer;
+}
+.formulario input[type="button"]:hover{
+  background-color: #ff04ff;
+  color: black;
+}
