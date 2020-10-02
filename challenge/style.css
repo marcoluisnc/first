@@ -1,0 +1,267 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Spartan', sans-serif;
+}
+:root{
+    --letrasgrises:rgb(165, 165, 165);
+}
+section.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+div.hero{
+    grid-column: 1/5;
+    background-image: url("assets/desktop-image-hero-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.hero ul{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 5em;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+.hero ul li{
+    display: flex;
+    align-items: center;
+}
+.hero ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    transition: all 500ms;
+}
+.hero ul li a.title1{
+    font-size: 1.5em;
+    padding-bottom: 5px;
+}
+.hero ul li .borderFade {
+    padding-bottom: 1px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+.hero ul li .borderFade::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transform: translateY(3px);
+    background: hsl(0, 0%, 100%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.hero ul li a.borderFade:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+div.info{
+    background-color: white !important;
+    grid-column: 5/8;
+    display: grid;
+    grid-template-rows: 1fr 100px;
+}
+.info .continfo{
+    width: 70%;
+    margin: 0px auto;
+    margin-top: 20px;
+    display: grid;
+    place-content: center;
+}
+.info h3{
+    font-size: 2em;
+}
+.info p,.about p{
+    margin: 30px 0;
+    color: var(--letrasgrises);
+    text-indent: 10px;
+    word-spacing: 1px;
+    line-height: 30px;
+    font-size: 15px;
+}
+.info a{
+    color: var(--letrasgrises);
+    text-decoration: none;
+    letter-spacing: 12px;
+    transition: all 200ms;
+}
+.info a:hover{
+    color: rgb(66, 66, 66);
+}
+.buttons{
+    display: flex;
+    align-items: flex-end;
+}
+.info .buttons button{
+    width: 100px;
+    background-color: black;
+    color: white;
+    height: 90%;
+    border:none;
+    font-size: 1.5em;
+}
+.info .buttons button:hover{
+    background-color: rgb(54, 54, 54);
+    cursor: pointer;
+}
+div.image1{
+    background-image: url("assets/image-about-dark.jpg");
+    background-size: cover;
+    background-position: center;
+}
+div.image1,.image2{
+    grid-column: span 2;
+}
+div.about{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 3/6;
+    text-align: justify;
+}
+.about h4{
+    font-size: 1.5em; 
+}
+.about p{
+    margin: 30px;
+}
+div.image2{
+    background-image: url("assets/image-about-light.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 6/8;
+}
+.menu, .menu-responsive{
+    display: none;
+}
+
+.menu i{
+    font-size: 2.5em;
+    color: rgb(73, 73, 73);
+}
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(151, 151, 151);
+    overflow-x: hidden;
+    transition: all 500ms ease 0s;
+}
+
+.overlay-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a{
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 1.4em;
+    display: block;
+    text-decoration: none;
+    transition: all 300ms ease 0s;
+}
+
+.overlay a:hover, .overlay a:focus{
+    opacity: .6;
+    
+}
+.overlay .close{
+    color: rgb(202, 202, 202);
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:1200px){
+    .hero ul{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    *{
+        overflow-y: auto;
+    }
+    div.hero{
+        grid-column: span 7;
+        height: 278px;
+    }
+    div.hero ul{
+        display: none;
+    }
+    .menu,.menu-responsive{
+        display: inherit;
+        text-decoration: none;
+    }
+    .menu-responsive{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 20px;
+        grid-column: 1/8;
+        background-color: #ffffff;
+        height: 80px;
+    }
+    .menu-responsive .title1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(71, 71, 71);
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+    div.info{
+        grid-column: span 7;
+        height: 350px;
+        overflow: hidden;
+    }
+    .info .continfo{
+        width: 95%;
+        height: 300px;
+    }
+    .info h3{
+        font-size: 28px;
+    }
+    .buttons{
+        display: none;
+    }
+    div.image1{
+        grid-column: span 7;
+    }
+    div.about{
+        grid-column: span 7;
+        height: 400px;
+    }
+    .info p,.about p{
+        font-size: 12px;
+    }
+    div.image2,.image1{
+        grid-column: span 7;
+        height: 250px;
+    }
+    
+
+}
