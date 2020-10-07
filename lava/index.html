@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <header>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Articles</a>
+                    </li>
+                    <a href="#">
+                        <li>Suscribe</li>
+                    </a>
+                </ul>
+        </header>
+        <section class="first-wrapper">
+            <div class="midle-first">
+                <div class="wrapper-midle">
+                    <h1>
+                        Lava
+                    </h1>
+                    <p>
+                        A HUMAN EXPLORATION
+                    </p>
+                </div>
+            </div>
+            <div class="last-first">
+                <h3>
+                    Slow traveling
+                </h3>
+                <p class="first-subtitle">
+                    A TRAVEL BLOG
+                </p>
+                <p class="text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis, veniam dolore dicta, molestias
+                    similique dignissimos pariatur impedit, a
+                </p>
+            </div>
+        </section>
+        <section class="second-wrapper">
+            <div class="latest">
+                <h3>Latest articles</h3>
+                <p>Our most recent posts</p>
+            </div>
+            <div class="articles">
+                <img src="images/article1.jpg" >
+                <img src="images/article2.jpg" >
+                <img src="images/article3.jpg">        
+            </div>
+        </section>
+        <section class="suscribe">
+            <p>Subscribe</p>
+            <p>Sign up to our newsletter</p>
+            <input type="email" placeholder="Your email">
+            <button>ENVIAR</button>
+        </section>
+        <section class="footer">
+            <ul>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">Subscribe</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+    
+   
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0)
+        })
+    </script>
+</body>
+
+</html>
